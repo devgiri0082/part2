@@ -101,6 +101,7 @@ export default function App() {
 
     }
     function changeFilter(elem) {
+        valueRef.current.value = "";
         setCurrentGenre(elem);
         let current = [];
         if (elem === "All") {
